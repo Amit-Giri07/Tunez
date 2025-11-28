@@ -4,6 +4,11 @@ defmodule Tunez.Music.Album do
   postgres do
     table "albums"
     repo Tunez.Repo
+
+    references do
+      reference :artist, index?: true
+    end
+
   end
 
   attributes do
@@ -28,4 +33,6 @@ defmodule Tunez.Music.Album do
       allow_nil? false
     end
   end
+
+
 end

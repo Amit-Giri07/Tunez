@@ -83,7 +83,7 @@
         "destination_attribute": "id",
         "destination_attribute_default": null,
         "destination_attribute_generated": null,
-        "index?": false,
+        "index?": true,
         "match_type": null,
         "match_with": null,
         "multitenancy": {
@@ -109,7 +109,7 @@
   "custom_indexes": [],
   "custom_statements": [],
   "has_create_action": false,
-  "hash": "415E889593C2B64B6CE7A06805F629D9635076EE175042CB1B932A1B31A081DB",
+  "hash": "63AC83D54151151AEA180A7D6C1D1958BFA5D4068FEE4E0E214461AF3604F58D",
   "identities": [],
   "multitenancy": {
     "attribute": null,

@@ -1,4 +1,4 @@
-defmodule Tunez.Repo.Migrations.CreateAlbums do
+defmodule Tunez.Repo.Migrations.CreateAlbumsTable do
   @moduledoc """
   Updates resources based on their most recent snapshots.
 
@@ -31,9 +31,13 @@ defmodule Tunez.Repo.Migrations.CreateAlbums do
           ),
           null: false
     end
+
+    create index(:albums, [:artist_id])
   end
 
   def down do
+    drop_if_exists index(:albums, [:artist_id])
+
     drop constraint(:albums, "albums_artist_id_fkey")
 
     drop table(:albums)
