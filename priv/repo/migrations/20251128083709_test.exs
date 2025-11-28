@@ -1,4 +1,4 @@
-defmodule Tunez.Repo.Migrations.CreateAlbumsTable do
+defmodule Tunez.Repo.Migrations.Test do
   @moduledoc """
   Updates resources based on their most recent snapshots.
 
