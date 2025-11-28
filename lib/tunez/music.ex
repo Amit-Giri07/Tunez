@@ -1,6 +1,5 @@
 defmodule Tunez.Music do
-  use Ash.Domain,
-    otp_app: :tunez, extensions: [AshPhoenix]
+  use Ash.Domain, otp_app: :tunez, extensions: [AshPhoenix]
 
   resources do
     resource Tunez.Music.Artist do
@@ -10,5 +9,7 @@ defmodule Tunez.Music do
       define :update_artist, action: :update
       define :destroy_artist, action: :destroy
     end
+
+    resource Tunez.Music.Album
   end
 end
