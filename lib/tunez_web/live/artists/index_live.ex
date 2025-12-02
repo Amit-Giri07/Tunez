@@ -13,7 +13,7 @@ defmodule TunezWeb.Artists.IndexLive do
 
   def handle_params(_params, _url, socket) do
     artists = Tunez.Music.read_artists!()
-
+    dbg(artists)
     socket =
       socket
       |> assign(:artists, artists)
